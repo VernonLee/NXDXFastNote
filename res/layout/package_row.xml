@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 47 Degrees, LLC
+  ~  http://47deg.com
+  ~  hello@47deg.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/sys_blue"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:tag="back" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sys_blue"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/play_with_word" 
+            />
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sys_blue"
+            android:contentDescription="@null"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/del_with_word"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/write"
+        android:orientation="vertical"
+        android:tag="front" >
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/sys_blue" />
+
+        <LinearLayout
+            android:id="@+id/noteImageLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="6dp" >
+
+            <ImageView
+                android:id="@+id/noteImg"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/noteImageLay"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+                <TextView
+                    android:id="@+id/noteTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/firstTitle"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/noteCreateDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/sys_blue"
+                    android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

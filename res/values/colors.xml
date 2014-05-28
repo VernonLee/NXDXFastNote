@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="listviewBg">#efeeec</color>
+    <color name="firstTitle">#7b7878</color>
+    <color name="secondTitle">#ced6ce</color>
+    <color name="write">#ffffff</color>
+    <color name="sys_blue">#046cc1</color>
+    <color name="bg">#e4e4e4</color>
+    <color name="bottom">#f0f0f0</color>
+</resources>

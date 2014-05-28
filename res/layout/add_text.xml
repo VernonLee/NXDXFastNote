@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/tNoteTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_note_title"
+        android:hint="@string/tnote_title"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/firstTitle"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/sys_blue" />
+
+    <LinearLayout
+        android:id="@+id/pictureFile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:gravity="center" >
+
+        <!-- 图片区域 -->
+
+        <ImageView
+            android:id="@+id/pictureImg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/photo"
+            android:clickable="true"
+            android:visibility="gone"
+           />
+        <!-- 录音 -->
+
+        <ImageView
+            android:id="@+id/recoderImg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:clickable="true"
+            android:src="@drawable/sound"
+            />
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:id="@+id/pictureFile"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:visibility="gone"
+         >
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/recordFile"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@color/bg"
+        android:gravity="center" 
+        android:visibility="gone">
+
+        <ImageButton />
+        <ImageButton />
+        <ImageButton />
+    
+    </LinearLayout>
+    -->
+
+    <EditText
+        android:id="@+id/tNoteContent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/edittext_note_title"
+        android:gravity="top"
+        android:hint="@string/tnote_content"
+        android:inputType="text|textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/firstTitle"
+        android:textSize="20sp" />
+
+</LinearLayout>

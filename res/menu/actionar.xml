@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_cancle"
+        android:icon="@drawable/action_del_w"
+        android:orderInCategory="3"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/action_takephoto"
+        android:icon="@drawable/action_pic_w"
+        android:orderInCategory="2"
+        android:showAsAction="always"/>
+    <item 
+        android:id="@+id/action_record"
+        android:icon="@drawable/action_rec_w"
+        android:orderInCategory="1"
+        android:showAsAction="always"/>
+</menu>
